@@ -1,0 +1,60 @@
+.slides{
+    height: 100%;
+}
+.carousel{
+    height: 100%;
+}
+.carousel-inner {
+    background: #1b396a;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+  }
+
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+}
+.carousel-caption {
+    position: relative;
+    right: 1%;
+    bottom: 1.25rem;
+    left: 1%;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.titulo-aviso{
+    height: 9rem;
+    padding:1rem;
+    margin-right: 1.2rem;
+    margin-left: .5rem;
+    margin-top: -3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-aviso h3 {
+    font-size: 2.5rem;
+}
+
+.detalles-aviso{
+    
+    padding: 1rem;
+    height: 15rem;
+    margin-right: 1.2rem;
+    margin-left: .5rem;
+    display: flex;
+    justify-content: center;
+}
+.detalles-aviso p {
+    font-size: 2rem;
+}
+
