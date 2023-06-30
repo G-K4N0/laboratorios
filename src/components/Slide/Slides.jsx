@@ -6,7 +6,7 @@ export const Slides = ({ data }) => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % data.length);
+      setActiveIndex((prevIndex) => (prevIndex + 1) % data?.length);
     }, 30000);
 
     return () => {

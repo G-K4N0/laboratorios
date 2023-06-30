@@ -1,14 +1,18 @@
 .slides{
     height: 100%;
+    border-radius: 15px;
 }
 .carousel{
     height: 100%;
+    width: 100%;
 }
 .carousel-inner {
     background: #1b396a;
     width: 100%;
     overflow: hidden;
     height: 100%;
+    border-radius: 15px;
+    border: 1px solid #282c34;
   }
 
 .carousel-item {

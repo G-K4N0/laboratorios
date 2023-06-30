@@ -2,7 +2,8 @@
   height: 100%;
   border-radius: 25px;
   align-self: center;
-  background-color: rgb(183, 188, 192);
+  background: #1b396a;
+  border-radius: 2px solid rgb(183, 188, 192) ;
   height: 100%;
 }
 
@@ -35,4 +36,14 @@
   font-weight: bolder;
   margin: 1rem 3rem 1rem 3rem;
   border-radius: 25px;
+}
+@media (max-width: 768px) {
+  .titulo {
+    font-size: large;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+  }
+}
+
+.fondo-titulo{
+  background: #363535;
 }
