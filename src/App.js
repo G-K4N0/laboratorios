@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
 import { BarraNavegacion } from "./components/Navbar";
@@ -26,20 +27,6 @@ function App() {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    filtrarHorario();
-    horaSiguiente();
-  }, [time]);
-
-  useEffect(() => {
-    peticionAvisos()
-      .then((response) => {
-        if (Object.keys(response.data).length !== 0) {
-          setAvisos(response.data);
-        }
-      })
-      .catch((error) => {});
-  }, []);
 
   const filtrarHorario = () => {
     if (Object.keys(horarios).length !== 0) {
@@ -58,6 +45,22 @@ function App() {
       setHorarioSiguiente(deleteElementTimePass(horarios));
     }
   };
+
+  useEffect(() => {
+    filtrarHorario();
+    horaSiguiente();
+  }, [time]);
+
+  useEffect(() => {
+    peticionAvisos()
+      .then((response) => {
+        if (Object.keys(response.data).length !== 0) {
+          setAvisos(response.data);
+        }
+      })
+      .catch((error) => {});
+  }, []);
+
 
   console.log(horarioSiguiente)
   return (
